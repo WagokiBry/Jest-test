@@ -1,4 +1,21 @@
 {
+  "name": "jest-test",
+  "version": "1.0.0",
+  "description": "\"my first jest test\"",
+  "homepage": "https://github.com/WagokiBry/Jest-test#readme",
+  "bugs": {
+    "url": "https://github.com/WagokiBry/Jest-test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WagokiBry/Jest-test.git"
+  },
+  "license": "ISC",
+  "author": "bryan",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "jest": "^30.2.0"
   }
