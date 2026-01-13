@@ -8,3 +8,7 @@ test('adds 1 + 2 to equal 3', () => {
 test("takes a string and capitalize the first letter",()=>{
   expect(capitalize("javascript")).toBe("Javascript")
 })
+
+test("take a string and reverse it",()=>{
+  expect(reverse("hi").toBe("ih"))
+})
