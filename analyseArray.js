@@ -3,11 +3,14 @@ export function analyseObject(arr){
          return acc += currentVal
     })/arr.length;
 
-    let minVal = Math.min(...arr)
+    let minVal = Math.min(...arr);
+    let maxVal = Math.max(...arr);
 
     return {
         average : average,
-        min: minVal
+        min: minVal,
+        max: maxVal,
+        length: arr.length
     }
 }
 
