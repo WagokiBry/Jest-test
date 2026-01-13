@@ -45,6 +45,11 @@ test("does the function return an object",()=>{
 test("returns average in an object",()=>{
   let analyzedArray = new analyseObject([1,8,3,4,2,6])
   expect(analyzedArray).toHaveProperty("average");
-  
+  })
 
-})
+  test("returns the min value",()=>{
+    let analysedArray = new analyseObject([1,8,3,4,2,6])
+    expect(analysedArray).toHaveProperty("min");
+    expect(analysedArray.min).toBe(1);
+
+  })
