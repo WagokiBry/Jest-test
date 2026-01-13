@@ -1,10 +1,13 @@
 export function analyseObject(arr){
     let average = arr.reduce((acc,currentVal)=>{
          return acc += currentVal
-    })/arr.length
+    })/arr.length;
+
+    let minVal = Math.min(...arr)
 
     return {
-        average : average
+        average : average,
+        min: minVal
     }
 }
 
