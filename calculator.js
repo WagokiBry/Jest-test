@@ -1,8 +1,8 @@
-export  let calculator = {
+export  function createObject(a,b) {
 
-    
+    return{
 
-    add(a,b){
+        add(a,b){
 return a + b
     },
 
@@ -18,4 +18,15 @@ return a + b
         return a/b
     }
 
+    }
 }
+
+let calc = new createObject()
+console.log(calc.divide(18,9))
+
+
+
+    
+
+    
+
