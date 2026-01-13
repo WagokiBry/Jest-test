@@ -53,3 +53,17 @@ test("returns average in an object",()=>{
     expect(analysedArray.min).toBe(1);
 
   })
+
+  test("returns the max value",()=>{
+    let analysedArray = new analyseObject([1,8,3,4,2,6])
+    expect(analysedArray).toHaveProperty("max");
+    expect(analysedArray.max).toBe(8);
+
+  })
+
+  test("returns the length of the array",()=>{
+    let analysedArray = new analyseObject([1,8,3,4,2,6])
+    expect(analysedArray).toHaveProperty("length");
+    expect(analysedArray.length).toBe(6);
+
+  })
