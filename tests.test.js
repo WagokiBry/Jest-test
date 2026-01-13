@@ -11,5 +11,5 @@ test("takes a string and capitalize the first letter",()=>{
 })
 
 test("take a string and reverse it",()=>{
-  expect(reverse("hi").toBe("ih"))
+  expect(reverse("hi")).toEqual("ih")
 })
