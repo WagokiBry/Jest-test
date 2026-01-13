@@ -2,7 +2,8 @@ import { sum } from "./sum.js";
 import { capitalize } from "./capitalise.js";
 import { reverse } from "./reverse.js";
 import { createObject } from "./calculator.js";
-import{ analyseObject } from "./analyseArray.js"
+import{ analyseObject } from "./analyseArray.js";
+import {caesarCipher} from "./caesarCipher.js"
 
 test("adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
@@ -66,4 +67,8 @@ test("returns average in an object",()=>{
     expect(analysedArray).toHaveProperty("length");
     expect(analysedArray.length).toBe(6);
 
+  })
+
+  test("shifts lowercase by a given number",()=>{
+expect(caesarCipher("abc", 1)).toBe("bcd")
   })
