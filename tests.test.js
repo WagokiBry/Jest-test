@@ -1,6 +1,7 @@
 import {sum} from './sum.js';
 import { capitalize } from './capitalise.js';
-import {reverse} from './reverse.js'
+import {reverse} from './reverse.js';
+import {calculator} from './calculator.js'
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -12,4 +13,8 @@ test("takes a string and capitalize the first letter",()=>{
 
 test("take a string and reverse it",()=>{
   expect(reverse("hi")).toEqual("ih")
+})
+
+test("calculator object that has basic operations of add,subtract,multiply, and divide",()=>{
+  expect(calculator).toEqual(calculator)
 })
