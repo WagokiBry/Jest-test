@@ -6,7 +6,7 @@ export  let calculator = {
 return a + b
     }
 
-    
+    subtract(a,b)
 
 
 }
