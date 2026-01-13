@@ -6,4 +6,4 @@ export function caesarCipher(str,shift){
     return result;
 }
 
-console.log(caesarCipher("abc",1))
+console.log(caesarCipher("xyz", 3))

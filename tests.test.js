@@ -70,5 +70,10 @@ test("returns average in an object",()=>{
   })
 
   test("shifts lowercase by a given number",()=>{
-expect(caesarCipher("abc", 1)).toBe("bcd")
-  })
+expect(caesarCipher("abc", 1)).toBe("bcd");
+})
+
+   test("wrapping from z-a",()=>{
+expect(caesarCipher("xyz", 3)).toBe("abc")
+ })
+ 
