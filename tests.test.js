@@ -2,6 +2,7 @@ import { sum } from "./sum.js";
 import { capitalize } from "./capitalise.js";
 import { reverse } from "./reverse.js";
 import { createObject } from "./calculator.js";
+import{ analyseObject } from "./analyseArray.js"
 
 test("adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
@@ -37,6 +38,13 @@ test("that all the methods work",()=>{
 })
 
 test("does the function return an object",()=>{
-  let analyzedArray = new analyseObject()
+  let analyzedArray = new analyseObject([1,8,3,4,2,6])
   expect(typeof analyzedArray).toBe("object")
+})
+
+test("returns average in an object",()=>{
+  let analyzedArray = new analyseObject([1,8,3,4,2,6])
+  expect(analyzedArray).toHaveProperty("average");
+  
+
 })
