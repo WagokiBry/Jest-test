@@ -1,4 +1,4 @@
-export  function createObject(a,b) {
+export  function createObject() {
 
     return{
 
