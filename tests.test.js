@@ -35,3 +35,8 @@ test("that all the methods work",()=>{
   expect(calc.multiply(20,20)).toBe(400)
   expect(calc.divide(20,20)).toBe(1)
 })
+
+test("does the function return an object",()=>{
+  let analyzedArray = new analyseObject()
+  expect(typeof analyzedArray).toBe("object")
+})
