@@ -30,6 +30,8 @@ test("calculator objects has basic methods for calculation", () => {
 
 test("that all the methods work",()=>{
   let calc = new createObject()
-  expect(calc.add(20,20)).toBe(40)
-  expect(calc.subtract(20,20)).toBe(0)
+  expect(calc.add(20,20)).toBe(40);
+  expect(calc.subtract(20,20)).toBe(0);
+  expect(calc.multiply(20,20)).toBe(400)
+  expect(calc.divide(20,20)).toBe(1)
 })
