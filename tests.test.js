@@ -83,10 +83,14 @@
 // console.log(mockFn());
 // console.log(mockFn());
 
-let mockFn = jest.fn().mockReturnValue(2000).mockReturnValueOnce(3000).mockReturnValueOnce(4000);
-console.log(mockFn())
-console.log(mockFn())
-console.log(mockFn.mock.calls)
+// let mockFn = jest.fn().mockReturnValue(2000).mockReturnValueOnce(3000).mockReturnValueOnce(4000);
+// console.log(mockFn())
+// console.log(mockFn())
+// console.log(mockFn.mock.calls)
 
+import { fetchUser } from "./api";  
+import { getUsername } from "./service";
 
-
+jest.mock("./api.js",()=>({
+  fetchUser : jest.fn()
+}))
