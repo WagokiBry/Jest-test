@@ -90,8 +90,12 @@
 import { logMessage } from "./logger.js";
 import { greetUser } from "./serviced.js";
 
-jest.mock("./logger", () => {
+jest.mock("./logger.js", () => {
   return {
     logMessage: jest.fn(),
   };
 });
+
+test("test if the logger works",()=>{
+
+})
