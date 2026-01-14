@@ -88,7 +88,7 @@
 // console.log(mockFn())
 // console.log(mockFn.mock.calls)
 
-import { fetchUser } from "./api";  
+import { logMessage } from "./logger.js";  
 import { getUsername } from "./service";
 
 jest.mock("./api.js",()=>({
