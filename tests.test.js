@@ -97,5 +97,8 @@ jest.mock("./logger.js", () => {
 });
 
 test("test if the logger works",()=>{
-
+  
+  
+expect(greetUser("Alice")).toBe("Hello Alice")
+expect(logMessage).toHaveBeenCalledWith("Hello Alice")
 })
