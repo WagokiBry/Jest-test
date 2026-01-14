@@ -83,10 +83,10 @@
 // console.log(mockFn());
 // console.log(mockFn());
 
-let mockFn = jest.fn().mockReturnValueOnce(2000).mockReturnValueOnce(3000).mockReturnValueOnce(4000);
+let mockFn = jest.fn().mockReturnValue(2000).mockReturnValueOnce(3000).mockReturnValueOnce(4000);
 console.log(mockFn())
 console.log(mockFn())
-console.log(mockFn())
+console.log(mockFn.mock.calls)
 
 
 
