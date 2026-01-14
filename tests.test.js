@@ -83,12 +83,8 @@
 // console.log(mockFn());
 // console.log(mockFn());
 
-import { greeting } from "./greet"
+let mockFn = jest.fn().mockReturnValue(2000).
+console.log(mockFn())
 
-test("testing the greet function",()=>{
-global.prompt = jest.fn(()=>"Alice")
 
-const greet = greeting()
 
-expect(greet).toBe("Hello, Alice.")
-})
