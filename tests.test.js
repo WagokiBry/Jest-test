@@ -76,7 +76,6 @@
 //    test("wrapping from z-a",()=>{
 // expect(caesarCipher("xyz", 3)).toBe("abc")
 //  })
- 
 
 //   const mockFn = jest.fn(()=>{return 5});
 // console.log(mockFn());
@@ -88,13 +87,11 @@
 // console.log(mockFn())
 // console.log(mockFn.mock.calls)
 
-import { logMessage } from "./logger.js";  
+import { logMessage } from "./logger.js";
 import { greetUser } from "./serviced.js";
 
-jest.mock("./logger",()=>{
-   return {
-logMessage: jest.fn()
-   }
-    
-  
-})
+jest.mock("./logger", () => {
+  return {
+    logMessage: jest.fn(),
+  };
+});
