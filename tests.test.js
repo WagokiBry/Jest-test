@@ -94,3 +94,8 @@ import { getUsername } from "./service";
 jest.mock("./api.js",()=>({
   fetchUser : jest.fn()
 }))
+
+test("whether returned value to uppercase",()=>{
+  fetchUser.mockReturnValue("john")
+  expect(getUsername()).toBe("JOHN")
+})
