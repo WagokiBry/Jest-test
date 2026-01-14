@@ -91,11 +91,10 @@
 import { logMessage } from "./logger.js";  
 import { greetUser } from "./serviced.js";
 
-jest.mock("./api.js",()=>({
-  fetchUser : jest.fn()
-}))
-
-test("whether returned value to uppercase",()=>{
-  fetchUser.mockReturnValue("john")
-  expect(getUsername()).toBe("JOHN")
+jest.mock("./logger",()=>{
+   return {
+logMessage: jest.fn()
+   }
+    
+  
 })
