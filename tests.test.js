@@ -78,7 +78,17 @@
 //  })
  
 
-  const mockFn = jest.fn(()=>{return 5});
-console.log(mockFn());
-console.log(mockFn());
-console.log(mockFn());
+//   const mockFn = jest.fn(()=>{return 5});
+// console.log(mockFn());
+// console.log(mockFn());
+// console.log(mockFn());
+
+import { greeting } from "./greet"
+
+test("testing the greet function",()=>{
+global.prompt = jest.fn(()=>"Alice")
+
+const greet = greeting()
+
+expect(greet).toBe("Hello, Alice.")
+})
