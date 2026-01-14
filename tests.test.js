@@ -78,6 +78,7 @@
 //  })
  
 
-   let mockFn = jest.fn();
-  mockFn()
-  console.log(mockFn.mock.calls)
+  const mockFn = jest.fn(()=>{return 5});
+console.log(mockFn());
+console.log(mockFn());
+console.log(mockFn());
